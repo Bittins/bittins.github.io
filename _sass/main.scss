@@ -1,0 +1,28 @@
+body {
+    color: sienna;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.container {
+    background-color: mintcream;
+    border: darkseagreen 5px solid;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.background {
+    background-image: url('/assets/images/backgrounds/stars.gif');
+    background-repeat: repeat;
+    position: fixed; /* Ensures it covers the entire page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Places it behind other content */
+}
+
+.current {
+    color: green;
+  }
