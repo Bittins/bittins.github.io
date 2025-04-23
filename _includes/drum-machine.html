@@ -1,0 +1,5 @@
+<nav>
+    {% for item in site.data.drum-machine %}
+      <a href="{{ item.link | prepend: "/projects/drum-machine/"}}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
+    {% endfor %}
+  </nav>
