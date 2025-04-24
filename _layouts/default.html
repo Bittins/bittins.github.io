@@ -1,15 +1,19 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} – {{ site.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.gif">
   </head>
   <body>
     <div class="background"></div>
     <div class="container">
-    {% include navigation.html %}
+    <header>{% include navigation.html %}</header>
     {{ content }}
+    <footer>
+      © {{ site.time | date: "%Y" }} {{ site.author }}
+    </footer>
   </div>
   </body>
 </html>
